@@ -22,7 +22,9 @@ public class SanPham {
              this.dongia = dongia;
              this.giamgia = giamgia;
        }
-       
+      public SanPham(String tenSP, double donGia) {
+        this(tenSP,donGia,0);
+    }
        public String getTenSp(){
            return tenSp;
        }
@@ -55,6 +57,10 @@ public class SanPham {
            Scanner scanner = new Scanner(System.in);
            System.out.println("Nhap Ten San Pham:");
            tenSp = scanner.nextLine();
+           System.out.println("Nhap don gia:");
+           dongia =scanner.nextDouble();
+           System.out.println("Nhap giam gia:");
+           giamgia =scanner.nextDouble();
        }
 
     public static void main(String[] args) {
